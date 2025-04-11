@@ -1,37 +1,110 @@
-# Expense Tracker 💰📊
-A simple Expense Tracker app built with ReactJS. This app helps users track their daily expenses and manage their budget efficiently.
+#  Expense Tracker (MERN Stack)
 
-## Features 🚀
-✅ Add Expenses  
-✅ User-friendly Interface  
-✅ Built with ReactJS  
+A full-stack Expense Tracker application built with **MongoDB, Express.js, React.js, and Node.js**.  
+Track your daily expenses, add new records, and keep your budget under control!
 
-## 🚧 Upcoming Features:
-- Delete Expenses  
-- View Total Spending  
+---
 
-## Getting Started 🛠️
-Follow these steps to set up the project locally:
+##  Features
 
-1️⃣ **Clone the repository:**  
+- Add new expenses with date, amount, and title  
+- Store data in MongoDB database  
+- REST API built with Express.js  
+- User-friendly React frontend  
+- Real-time update on new expense addition  
+
+---
+
+##  Folder Structure
+
+```text
+EXPENSE_TRACKER/
+├── client/              # React frontend
+│   ├── public/
+│   ├── src/
+│   └── package.json
+├── server/              # Express backend
+│   ├── models/
+│   ├── routes/
+│   ├── index.js
+│   └── package.json
+├── .gitignore
+├── License
+└── README.md
+```
+
+
+---
+
+##  Getting Started
+
+###  Prerequisites
+Make sure you have **Node.js**, **npm**, and **MongoDB** installed.
+
+---
+
+## Installation
+
+### Clone the repository
+
 ```bash
-git clone` https://github.com/metherahul/expense-tracker.git
-
-
-2️⃣ Navigate to the project directory:
-
-```bash
+git clone https://github.com/metherahul/expense-tracker.git
 cd expense-tracker
+```
 
-3️⃣ Install dependencies:
+### Install client dependencies
 
 ```bash
+cd client
 npm install
+```
 
-4️⃣ Start the development server:
+### Install server dependencies
+
+```bash
+cd ../server
+npm install
+```
+
+### Setup MongoDB connection
+
+Create a **.env** file inside the **server/** folder with the following:
+
+```bash
+env
+MONGO_URI=mongodb://localhost:27017/expenseDB
+PORT=5000
+```
+
+### Start the server
 
 ```bash
 npm start
+```
 
-This will start the application, and you can view it in the browser at:
-➡️ http://localhost:3000
+### Start the client
+
+```bash
+cd ../client
+npm start
+```
+Now, visit your app at => http://localhost:3000
+
+## Tech Stack
+
+**Frontend:** ReactJS
+**Backend:** Node.js, Express.js
+**Database:** MongoDB (via Mongoose)
+
+## Upcoming Features
+- Delete expense items
+- Total expense summary
+- Filter by date
+- User Authentication (optional)
+
+## Contribution
+**Pull requests** are welcome. For major changes, please open an **issue** first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License.
+

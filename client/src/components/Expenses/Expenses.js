@@ -8,7 +8,8 @@ return(
         {props.item.map((expense)=>(
         
         <ExpenseItems
-            date = {expense.date} 
+            key = {expense._id || expense.id}
+            date = {new Date(expense.date)} 
             title = {expense.title} 
             amount = {expense.amount}/>
         ))}
