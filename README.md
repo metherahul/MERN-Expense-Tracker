@@ -7,12 +7,13 @@ Track your daily expenses, add new records, and keep your budget under control!
 
 ##  Features
 
-- Add new expenses with date, amount, and title  
-- Store data in MongoDB database  
-- REST API built with Express.js  
-- User-friendly React frontend  
-- Real-time update on new expense addition  
-
+- Add, edit, and delete expense entries
+- Real-time UI updates after every operation
+- Sort expenses by latest date
+- Filter expenses by year
+- Fully responsive React UI
+- Backend: REST API using Express & Mongoose
+- Data stored in MongoDB  
 ---
 
 ##  Folder Structure
@@ -97,8 +98,6 @@ Now, visit your app at => http://localhost:3000
 **Database:** MongoDB (via Mongoose)
 
 ## Upcoming Features
-- Delete expense items
-- Total expense summary
 - Filter by date
 - User Authentication (optional)
 

@@ -9,11 +9,13 @@ return(
         
         <ExpenseItems
             key = {expense._id || expense.id}
+            id = {expense._id}
             date = {new Date(expense.date)} 
             title = {expense.title} 
-            amount = {expense.amount}/>
-        ))}
-     
+            amount = {expense.amount}
+            onDelete= {props.onDelete}
+            onUpdate = {props.onUpdate}/>
+        ))}     
     </Card>
 )
 

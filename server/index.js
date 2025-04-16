@@ -20,18 +20,15 @@ app.use("/api/expenses", expenseRoutes);
 const connectToDB = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
+    const PORT = 5000;
+    app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
     console.log("MongoDB connected");
+  })
   } catch (err) {
     console.error("MongoDB connection failed:", err.message);
     process.exit(1); // Forcefully stop app if DB not connected
   }
 };
 connectToDB();
-
-
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
-
 
